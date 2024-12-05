@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improving Your Game</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/improve.css">
+    <link rel="stylesheet" href="CSS/improve-table.css">
+    <link rel="stylesheet" href="CSS/animation.css">
+</head>
+
+<header>
+    <h1>Improving Your Game</h1>
+</header>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rules.html">Rules & Regulations</a></li>
+            <li><a href="improve.html">Improve Your Game</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <h2>Basic Tips that Helped Me Improve</h2>
+    <h3>Priority of Play</h3>
+    <div class="priorityOfPlay">
+        <p>
+            The concept of priority of play is crucial in football (soccer) as it serves as a guiding principle for
+            effective
+            decision-making on the field. Essentially, priority of play refers to the optimal direction in which to
+            advance the
+            ball. The primary focus should always be on playing the ball forward, as this represents the shortest route
+            to the goal
+            and maximizes the team's chances of scoring. However, defenders will often position themselves to block this
+            path. <br><br>
+            In such cases, many beginners mistakenly opt to pass the ball backward when faced with defensive pressure.
+            Instead, the
+            next best option is to play the ball diagonally forward, which allows players to maintain proximity to the
+            ball while
+            If both the forward and diagonal forward options are unavailable, the team should consider playing
+            the ball to the sides. This lateral movement forces defenders to shift, potentially creating gaps in their
+            formation. <br><br>
+            If all three options—forward, diagonal forward, and sideways—are covered, the team can then play the ball
+            diagonally
+            backward. This strategy not only keeps the opponents moving but also provides the attacking team with the
+            opportunity to
+            reset their formation while complicating the defenders' efforts. <br><br>
+            Only when all these avenues are exhausted should the
+            team resort to playing the ball back, as this can waste the progress made and invite counter-attacks from
+            the
+            opposition.
+
+        </p>
+        <iframe width="640" height="320" src="https://www.youtube.com/embed/ydnyS7XWw3A?si=BsezKGDactt2_m6m"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+
+    <h3>Speed of Play</h3>
+
+    <div class="speedOfPlay">
+        <p>
+            The speed of play is another tip that is good to remember to help with your decision makings. Let's face it,
+            we all loathe the "one man" guy, who hogs the ball for his dear life. Yes, that tactic may work, if you are
+            possessed with world-class dribbling talent. However, in the recent years, football philosophy has been
+            adapting
+            and evolving into a more passing emphasized plays. This is simple. A player will never out run the ball,
+            both speed
+            and stamina (enduance). <br><br>
+            A general rule of thumb is this: A pass will always outrun a dribble. No matter how fast a player
+            is,
+            they will never outrun a ball that is passed with the right weight and accuracy. Passing the ball is much
+            more efficient,
+            since players won't have to sprint everytime, and have more control with their plays. It's much easier to
+            steer a car going
+            35mph than a car going 120. The same principle is applied here. A slower smoother distribution will give us
+            advantage to
+            hold control of our plays, give us time to think, and rest our body for when it actually needs a sprint.
+        </p>
+        <div class="container">
+            <div class="animation-box dribble-box">
+                <h2>Dribble Animation</h2>
+                <div class="field">
+                    <div class="dribbler player1"></div>
+                    <div class="dribble-ball"></div>
+                </div>
+            </div>
+            <div class="animation-box pass-box">
+                <h2>Pass Animation</h2>
+                <div class="field">
+                    <div class="player1"></div>
+                    <div class="player2"></div>
+                    <div class="ball"></div>
+                </div>
+            </div>
+            <script>
+                const ballPass = document.querySelector('.pass-box .ball');
+        
+                // Trigger the pass animation after a delay
+                setTimeout(() => {
+                    ballPass.classList.add('pass');
+                }, 1000); // Start the pass animation after 1 second
+            </script>
+        </div>
+    </div>
+   
+
+    <h2>Tactical Plays</h2>
+    <div class="tactical-plays">
+        <div class="tactical-play">
+            <h3>Tiki-Taka</h3>
+            <p>
+                Tiki-Taka is a style of play in soccer that focuses on short, quick passes and maintaining possession of
+                the ball.
+                The direct translation of "Tiki-Taka" comes from Spanish, where "tiki" refers to the sound of the ball
+                being passed,
+                and "taka" refers to the sound of the ball being received. This tactic was created and popularized by
+                the Spanish
+                national team and FC Barcelona, especially under the management of Pep Guardiola in the late 2000s and
+                early 2010s.
+                <br><br>
+                To execute Tiki-Taka, players constantly move to create space and options for each other.
+                They make quick, short passes, often in triangles, to keep the ball moving and to avoid losing
+                possession.
+                The players need to be very skilled at passing and have good awareness of their teammates' positions.
+                This style requires a lot of teamwork and communication.
+                <br><br>
+                The benefits of Tiki-Taka include controlling the game by keeping the ball away from the opponent,
+                which reduces their chances to score. It also tires out the opposing team, as they have to chase the
+                ball.
+                By maintaining possession, teams can create opportunities to attack while minimizing risks of
+                counter-attacks from the other side. Overall, Tiki-Taka emphasizes skill, teamwork, and strategic play.
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vhvKoRcdpUw?si=RMDvgCwkih64aaOz"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="tactical-play">
+            <h3>Collective Press</h3>
+            <p>
+                Collective pressing, often referred to simply as "pressing," is a tactic in soccer where a team works
+                together to win
+                back possession of the ball as quickly as possible after losing it. The idea is to apply pressure on the
+                opposing
+                players, especially those who have the ball, to force them into making mistakes or hurried decisions.
+                <br><br>
+                In collective pressing, players coordinate their movements to close down space and limit the options
+                available to the
+                opponent. This means that when one player presses an opponent, nearby teammates also move in to support,
+                creating a
+                collective effort to regain possession. The team works as a unit, often trying to trap the opposing
+                players in certain
+                areas of the field, making it harder for them to pass or move the ball effectively.
+                <br><br>
+                The benefits of collective pressing include disrupting the opponent's play and creating opportunities to
+                win the ball
+                back in dangerous areas, which can lead to quick scoring chances. It also puts psychological pressure on
+                the opposing
+                team, making them feel rushed and more likely to make errors. Overall, collective pressing is an
+                aggressive and
+                proactive approach that can lead to exciting and dynamic gameplay.
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tqjKroqfOrQ?si=1CnMYgClI-56vtu0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+<h2>Weekly Schedule of a Professional Soccer Player</h2>
+<div class="table-wrapper">
+    <table class="weekly-schedule">
+        <colgroup>
+            <col id="daysOfWeek" span="7" />
+            <col id="hoursOfDay" span="2" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Day of the Week</th>
+                <td>Sunday</td>
+                <td>Monday</td>
+                <td>Tuesday</td>
+                <td>Wednesday</td>
+                <td>Thursday</td>
+                <td>Friday</td>
+                <td>Saturday</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>AM</th>
+                <td id="recovery">Recovery Session</td>
+                <td id="training">Soccer Training</td>
+                <td id="training">Light Training</td>
+                <td rowspan="2" id="championsLeague">Champions League Fixture</td>
+                <td id="recovery">Recovery Session</td>
+                <td id="training">Light Training</td>
+                <td rowspan="2" id="premierLeague">Premier League Fixture</td>
+            </tr>
+            <tr>
+                <th>PM</th>
+                <td id="rest">Rest</td>
+                <td id="gym">Gym Session</td>
+                <td id="rest">Rest</td>
+                <td id="rest">Rest</td>
+                <td id="recovery">Recovery Session</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

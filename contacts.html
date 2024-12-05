@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Soccer Infographic & Improvement</title>
+    <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/contacts.css">
+    <link rel="stylesheet" href="CSS/contact-form.css">
 </head>
 <body>
-
 <header>
     <h1>Contact Us</h1>
 </header>
@@ -15,22 +17,67 @@
 <nav>
     <ul>
         <li><a href="index.html">Home</a></li>
+        <li><a href="rules.html">Rules & Regulations</a></li>
+        <li><a href="improve.html">Improve Your Game</a></li>
+        <li><a href="resources.html">Resources</a></li>
         <li><a href="contacts.html">Contacts</a></li>
-        <li><a href="#about">About Us</a></li>
     </ul>
 </nav>
 
-<main>
-    <section id="contact-info">
-        <h2>Contact Us</h2>
-        <p>For inquiries, please reach out to the website developer:</p>
-        <ul>
-            Akira Kadokura
-            <li>Phone: +123 456 7890</li>
-            <li>Email: developer@example.com</li>
-        </ul>
-    </section>
-</main>
+        <h2>Questions? Contact Us</h2>
+        
+        <div class="grid-container">
+            <div class="text-content">
+                <h3>Akira Kadokura</h3>
+                <p id="text">Born and raised in the CNMI, I grew up to play soccer, and fell in love with it.
+                    I have been playing the sport since 5 years old, and have experience with the sport for
+                    more than a decade. I am blessed to say that I represent for the islands and have participated in
+                    numerous competitions. Some places I have gone off-island with the sport were Guam, Philippines,
+                    Hong Kong, Solomon Islands,
+                    Jordan, Indonesia, and Japan. <br><br>
+                    In the club team, I represent for the 11 Tigers Football Club (Officially under Matansa Football
+                    Club).
+                    From making our team debut since 2021 Fall, we have made tremendous runs of seasons, securing the
+                    champion for
+                    5 out of 7 seasons. We have won our most recent win last November of this year, which we also
+                    completed with a
+                    perfect run, meaning there was no losses, nor tie in our whole run of the league. <br><br>
+                    The picture was taken in the finals of the MSL (Men's Soccer League), where we
+                    ultimately won the match (3-2) and secured our 5th title win.
+                </p>
+            </div>
+            <figure id="image-crop">
+                <img src="IMGs/11tiger-24fall-dribble.jpg"
+                    alt="Picture of myself participating in the MSL(Men's Soccer League) final against Kanoa FC"
+                    class="dribble-self">
+                    <figcaption>Picture of myself dribbling in the MSL (Men's Soccer League) finals against Kanoa </figcaption>
+            </figure>
+            <figure>
+                <img src="IMGs/11tiger-24fall-defense.jpeg"
+                    alt="Image of myself (#9) playing in the MSL (Men's Soccer League) at NMISTC, located at Koblerville. This game was the finals between Kanoa (in Orange) against 11 Tigers (Pink).">
+                <figcaption>Myself (#9) playing in the finals against Kanoa (team in Orange) at NMISTC, Koblerville
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="IMGs/11tiger-24fall-champions.jpeg" alt="Our team photo winning our 5th Men's League Title">
+                <figcaption>Team photo after winning against Kanoa FC 3-2, winning our 5th League Title</figcaption>
+            </figure>
+        </div>
+
+        <h2>Submit Your Questions</h2>
+        <form action="https://formspree.io/f/xvgolwwr" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter Name Here">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter Email Here">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Message Here"></textarea>
+
+            <button type="submit">Send Email</button>
+        </form>
 
 </body>
+
 </html>
