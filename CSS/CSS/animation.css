@@ -1,0 +1,94 @@
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation-box {
+    border: 2px solid green;
+    background-color: #bef7a0;
+    width: 635px;
+    text-align: center;
+    position: relative;
+}
+
+.field {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+}
+
+.dribbler, .dribble-ball, .player1, .player2, .ball {
+    position: absolute;
+    bottom: 50px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.dribbler, .player1 {
+    left: 50px;
+    background-color: blue;
+}
+
+.player2 {
+    left: 500px;
+    background-color: red;
+}
+
+.dribble-ball, .ball {
+    background-color: gray;
+    left: 50px;
+    width: 15px;
+    height: 15px;
+}
+
+.animation-box:hover .dribbler,
+.animation-box:hover .dribble-ball {
+    animation: dribble 2.5s linear infinite;
+}
+
+.animation-box:hover .ball {
+    animation: pass 1s linear infinite;
+}
+
+@keyframes dribble {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(500px);
+    }
+}
+
+@keyframes pass {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(470px);
+    }
+}
+
+@media (max-width: 600px) {
+    html, body {
+        margin: 0; 
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+
+    .container {
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        transform: scale(0.55);
+    }
+
+    .speedOfplay p {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}

@@ -1,0 +1,115 @@
+#redCard-vs-yellowCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#redCard-vs-yellowCard p {
+    display: block;
+    width: 45%;
+    text-align: left;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+    justify-items: center; /* Center items within the grid */
+    margin: 0 auto; /* Center the container itself */
+    max-width: 1200px; /* Set a max-width for the container */
+}
+
+#differentKicks {
+    text-align: center;
+}
+
+.container section,
+.container div {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 100%; 
+}
+
+.container p {
+    text-align: left;
+    padding: 20px;
+}
+
+.container iframe {
+    align-self: center;
+    justify-content: center;
+}
+
+#basicPass iframe,
+#lobPass iframe,
+#curveShot iframe,
+#powerShot iframe {
+    align-self: center;
+}
+
+main {
+    padding: 20px; 
+}
+
+h2, h3 {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    html, body {
+        margin: 0; 
+        padding: 0; 
+        overflow-x: hidden; 
+    }
+
+    #redCard-vs-yellowCard {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    #redCard-vs-yellowCard img {
+        padding: 10px;
+    }
+    
+    #redCard-vs-yellowCard p {
+        width: 100%; 
+        padding: 0 10px; 
+    }
+    
+    .container {
+        grid-template-columns: 1fr; 
+        justify-items: center; /* Center items within the grid */
+        margin: 0 auto; /* Center the container itself */
+    }
+
+    #differentKicks {
+        display: grid;
+        grid-template-columns: 1fr;
+        min-width: 250px;
+        text-align: center; /* Center text within the differentKicks section */
+        margin: 0 auto; /* Center the differentKicks section */
+    }
+
+    #differentKicks h2 {
+        text-align: center; /* Center the heading */
+        margin: 20px 0; /* Add some margin for spacing */
+    }
+
+    #differentKicks > div {
+        width: 100%; 
+        max-width: 640px; 
+        margin: 10px 0; 
+    }
+
+    #differentKicks > iframe {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}

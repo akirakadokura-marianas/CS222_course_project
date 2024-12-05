@@ -1,0 +1,83 @@
+table {
+  border-collapse: collapse;
+  border: 20px groove gray;
+  height: 400px;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  width: 12.5%;
+}
+
+table col#daysOfWeek {
+  background-color: rgb(51, 150, 117);
+  width: 75px;
+}
+
+table col#hoursOfDay {
+  width: 10px;
+}
+
+thead {
+  background-color: cadetblue;
+  color: black;
+}
+
+#recovery {
+  background-color: rgb(51, 255, 0);
+}
+
+#training {
+  background-color: blue;
+  color: white;
+}
+
+#championsLeague {
+  background-color: blueviolet;
+  color: white;
+}
+
+#rest {
+  background-color: coral;
+}
+
+#gym {
+  background-color: red;
+}
+
+#premierLeague {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+caption {
+  caption-side: top;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .table-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  table {
+      border: 10px groove gray; 
+      height: auto; 
+      transform: scale(0.55);
+  }
+
+  th, td {
+      padding: 5px; 
+      width: auto; 
+  }
+
+}

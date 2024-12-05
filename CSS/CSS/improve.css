@@ -1,0 +1,99 @@
+.priorityOfPlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.priorityOfPlay p {
+    display: block;
+    width: 45%;
+    text-align: left;
+}
+
+.speedOfPlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.speedOfPlay p {
+    width: 1300px; 
+    text-align: center; 
+    padding-bottom: 20px;
+}
+
+.tactical-plays {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: left;
+}
+
+.tactical-play {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 100%;
+    padding-left: 50px;
+}
+
+.tactical-play h3 {
+    text-align: center;
+}
+
+.tactical-play iframe {
+    align-self: center;
+}
+
+.table-wrapper {
+    padding: 20px;
+}
+
+.weekly-schedule {
+    align-items: center; 
+}
+
+@media (max-width: 600px) {
+
+    html,
+    body {
+        margin: 0;
+        padding: 10px;
+        overflow-x: hidden;
+    }
+
+    .priorityOfPlay , .speedOfPlay ,
+    .tactical-play {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .priorityOfPlay p , .speedOfPlay p , 
+    .tactical-play p {
+        text-align: left;
+        width: 100%;
+    }
+
+    .priorityOfPlay iframe , .tactical-play iframe {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .tactical-plays {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+
+    .table-wrapper {
+        padding: 10px;
+        text-align: center;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,131 @@
+img {
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 10px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #2B4570;
+}
+
+.premierLeague, 
+.laLiga, 
+.streamServices, 
+.freeWebsites {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding: 20px;
+    max-width: 1900px; 
+    margin: 0 auto; 
+}
+
+.premierLeague div, 
+.laLiga div, 
+.streamServices div, 
+.freeWebsites div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.premierLeague img, 
+.laLiga img, 
+.streamServices img, 
+.freeWebsites img {
+    max-width: 100%;
+    height: auto;
+}
+
+.premierLeague p, 
+.laLiga p, 
+.streamServices p {
+    text-align: left;
+}
+
+.premLogo img {
+    display: block;
+    width: 300px;
+    height: auto;
+}
+
+.premTeams img {
+    display: block;
+    width: 600px;
+    height: 300px;
+}
+
+.freeWebsites-text {
+    width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.freeWebsites-text p {
+    text-align: center;
+}
+
+.freeWebsites {
+    gap: 5px;
+}
+
+.freeWebsites div {
+    padding: 0px 10px 10px;
+}
+
+@media (max-width: 600px) {
+    html, body {
+        margin: 0; 
+        padding: 0; 
+        overflow-x: hidden; 
+    }
+
+    .premierLeague, 
+    .laLiga, 
+    .streamServices, 
+    .freeWebsites {
+        flex-direction: column; 
+        display: block; 
+        max-width: 100%; 
+    }
+
+    #premierLeague div, 
+    #laLiga div, 
+    .streamServices div, 
+    .freeWebsites div {
+        width: 90%; 
+        margin-bottom: 10px; 
+    }
+
+    .streamServices p {
+        padding: 0 auto;
+        padding-bottom: 0px;
+    }
+
+    .freeWebsites-text {
+        width: 90%;
+        padding: 20px;
+        padding-bottom: 0px;
+    }
+
+    .freeWebsites-text p {
+        text-align: left;
+    }
+
+    section p {
+        width: 100%; 
+        padding-left: 0; 
+    }
+
+    img {
+        width: 95%; 
+        height: auto; 
+    }
+}

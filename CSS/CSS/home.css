@@ -1,0 +1,88 @@
+figure img {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+
+figcaption {
+    font-size: .7em;
+    text-align: right;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#home p {
+    display: block; 
+    width: 50%; 
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    text-align: left;
+    padding: 45px;
+}
+
+.soccerInTheCnmi {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    text-align: left;
+    padding: 45px;
+}
+
+.purposeOfWebsite {
+    display: flex;
+    text-align: left;
+    padding: 45px;
+}
+
+@media (max-width: 600px) {
+    .container p {
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #home p {
+        width: 90%; 
+        text-align: left;
+    }
+
+    .info {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .soccerInTheCnmi {
+        display: flex; 
+        flex-direction: column; 
+        padding: 10px; 
+    }
+
+    .soccerInTheCnmi img {
+        width: 100%; 
+        max-width: 300px; 
+        margin: 0 auto; 
+    }
+
+    .purposeOfWebsite {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .purposeOfWebsite p {
+        width: 100%; 
+        padding: 0 10px; 
+    }
+
+    .purposeOfWebsite figure {
+        margin: 0 auto; 
+    }
+}
